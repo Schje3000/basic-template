@@ -116,48 +116,17 @@ body {
     border-radius: 5px;
 }
 
-/* Ersetzt deinen alten Hover-Block */
-.cta-button:hover, 
-.details-button:hover, 
-.hero-button:hover, 
-.Zutaten-button:hover {    
-    border: 2px solid #ffffff !important; 
-    color: #000000 !important; 
+.cta-button:hover, .details-button:hover .Zutaten-button:hover {
+	box-shadow: 0 0 5px #ffffff;
+	transition: ease-in-out 0.3s;
+	font-weight:bolder;
+    background-color: #e6e6e6;
 }
-
-/* 2. Spezifische Invertierungs-Logik hinzufügen */
-
-/* A) Buttons, die normalerweise WEISS sind (cta-button, details-button) */
-/* Diese müssen auf Hover schwarz werden */
-.cta-button:hover, 
-.details-button:hover {
-    background-color: #000000 !important; /* Hintergrund: Schwarz */
-    color: #ffffff !important;            /* Text: Weiß */
+.hero-button:hover, .Zutaten-button:hover {
+    box-shadow: 0 0 5px #000000;
+    transition: ease-in-out 0.3s;
+    font-weight: bolder;
 }
-
-
-/* B) Buttons, die normalerweise SCHWARZ/TRANSPARENT sind (hero-button, Zutaten-button) */
-/* Diese müssen auf Hover weiß werden */
-.hero-button:hover,
-.Zutaten-button:hover {
-    background-color: #ffffff !important; /* Hintergrund: Weiß */
-    color: #000000 !important;            /* Text: Schwarz */
-    border: 2px solid #000000 !important; /* Rahmen: Schwarz */
-    /* Die Zutaten-Buttons haben bereits einen weißen Rand, der bleibt */
-}
-
-/* Wichtig: Textfarbe in Links innerhalb der Buttons ebenfalls invertieren */
-.cta-button:hover a, 
-.details-button:hover a {
-    color: #ffffff !important;
-}
-.hero-button:hover a,.submit-button:hover a {
-    color: #000000 !important;
-} 
-.Zutaten-button:hover a {
-    color: #000000 !important;
-}
-
 .Zutaten-button {
     border: 2px solid #ffffff;
     padding: 15px 30px;
@@ -456,10 +425,7 @@ p.flavor-intro {
     cursor: pointer;
     border: 2px solid #ffffff;
     box-sizing: border-box;
-}
-
-.details-button-g:hover {
-    background: rgba(255,255,255,0.08);
+    transition: background-color .2s ease, box-shadow .2s ease, color .2s ease;
 }
 
 .bottomImage {
@@ -531,6 +497,7 @@ p.flavor-intro {
     font-size: 18px;
     font-family: 'Zain', sans-serif;
     outline: none;
+    transition: box-shadow 0.2s ease;
 }
 
 .contact-form input:focus {
@@ -548,6 +515,8 @@ p.flavor-intro {
     flex: 1; /* Stellt sicher, dass beide Hälften gleich breit sind */
 }
 
+/* --- Submit Button Styling --- */
+
 .submit-button {
     background-color: #ffffff;
     color: #000000;
@@ -559,6 +528,12 @@ p.flavor-intro {
     margin-top: 30px;
     font-size: 18px;
     font-family: Arial, sans-serif; /* Oder eine andere serifenlose Schrift */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #e6e6e6;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 
