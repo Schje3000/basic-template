@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zain:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purrfect Bites</title>
+    <link rel="stylesheet" href="styles/basic.css">
+</head>
+<body>
+
+<header class="header">
+        <div class="logo"><a href="index.html">Purrfect Bites</a></div>
+        <nav class="nav-links">
+            <a href="Vorteile.html">Vorteile </a>
+            <a href="Geschmackssorten.html">Geschmackssorten</a>
+            
+            <button class="cta-button mobile-only"><a href="JetztProbieren.html">Jetzt probieren</a></button>
+            
+        </nav>
+        
+        <button class="cta-button desktop-only"><a href="JetztProbieren.html">Jetzt probieren</a></button>
+        
+        <div class="menu-icon">
+            <div class="burger-icon" onClick="showMenu()"> 
+                <img src="images/burger-menu.svg">
+            </div>
+            <div class="close-icon" onClick="hideMenu()">
+                <img src="images/close-menu.svg">
+            </div>
+        </div>
+</header>
+
+    <main>
+        <section class="hero" style="display: flex; align-items: center;">
+                <div class="image-placeholder1"><img src="images/Catfoodheader2.jpg" alt=""></div>
+            <div class="hero-content" style="text-align: left;">
+                <h1 style="text-align: left;">Tasty Bites for <br>Picky Paws</h1>
+                <p style="text-align: left;">Voller natürlicher Inhaltsstoffe und für alle wählerischen Fellnasen der klare Favorit – Purrfect Bites macht jede Mahlzeit zu einem unvergesslichen Festmahl. Gut essbar, nahrhaft und einfach unwiderstehlich.</p>
+                <button class="hero-button">Spoil Your Cat Now</button>
+            </div>
+        </section>
+
+        <section class="why-purrfect">
+            <div class="image-placeholder"><img src="images/Bites.png" alt=""></div>
+            <div class="content">
+                <h2>Why your Cat will Love Purrfect Bites</h2>
+                <p>Mehr als nur Futter, wir haben Purrfect Bites wurde kreiert, um Ihre Katze mit dem höchsten Standard an Ernährung und Geschmack zu begeistern. Entdecken Sie alle Vorteile, die unsere Purrfect Bites zur ersten Wahl für deine Katze machen.</p>
+                <div class="features">
+                    <div class="feature-box"><img src="images/lucide/Vector-1.svg" alt="Natural"><p><strong>100% natural & grain-free</strong></p></div>
+                    <div class="feature-box"><img src="images/lucide/Vector-2.svg" alt="Vitamins"><p><strong>Packed with vitamins & taurine</strong></p></div>
+                    <div class="feature-box"><img src="images/lucide/Vector-3.svg" alt="Picky Cat"><p><strong>Loved by the pickiest cats</strong></p></div>
+                    <div class="feature-box"><img src="images/lucide/Vector.svg" alt="Sustainability"><p><strong>Sustainably sourced ingredients</strong></p></div>
+                </div>
+                <button class="details-button">Entdecke alle Vorteile</button>
+            </div>
+        </section>
+
+        <section class="flavors">
+    <h2>Three Ways to Purr with Our Flavors</h2>
+    <p class="flavor-intro">Von classic Chicken bis hin zu fresh Salmon - bei Purrfect Bites findet jede Katze ihr Lieblingssnack. Nahrhaft, lecker und genau das Richtige für deinen verwöhnten Gourmet.</p>
+    
+    <div class="flavor-cards">
+        <div class="card">
+            <img src="images/applaws-natural-wet-cat-food-tuna-fillet-with-chicken.png" alt="Chicken Delight">
+            <h3>Chicken Delight</h3>
+        </div> <div class="card">
+            <img src="images/applaws-natural-wet-cat-food-tuna-fillet-with-pacific-.png" alt="Salmon Feast">
+            <h3>Salmon <br> Feast</h3>
+        </div> <div class="card">
+            <img src="images/applaws-natural-wet-cat-food-tuna-fillet-with-beef.png" alt="Beef Lover's Choice">
+            <h3>Beef Lover's Choice</h3>
+        </div> </div>
+    <script type="text/javascript">
+    const nav = document.querySelector('nav');
+    const burgerIcon = document.querySelector('.burger-icon');
+    const closeIcon = document.querySelector('.close-icon');
+
+    const showMenu = () => {
+        // Navigationsmenü anzeigen (CSS: .nav-links.visible -> display: flex)
+        nav.classList.add('visible');
+        
+        // Burger-Icon verstecken (CSS: .burger-icon -> display: none)
+        burgerIcon.style.display = 'none'; 
+        
+        // Close-Icon anzeigen (CSS: .close-icon -> display: block)
+        closeIcon.style.display = 'block';
+    };
+    
+    const hideMenu = () => {
+        // Navigationsmenü verstecken
+        nav.classList.remove('visible');
+        
+        // Burger-Icon anzeigen
+        burgerIcon.style.display = 'block';
+        
+        // Close-Icon verstecken
+        closeIcon.style.display = 'none';
+    };
+</script>
+    </section>
+</main>
+</body>
+<footer class="footer">
+    
+    <div class="bottomImage">
+        <img src="images/Catfood_bottom.jpg" alt="Catfood_bottom">
+    </div>
+    
+    <div class="footer-content">
+        <p class="address">Purrfect Bites AG | Konsumstrasse 9 | 3007 Bern</p>
+        <nav class="footer-links">
+            <a href="#">Vorteile</a>
+            <a href="#">Geschmackssorten</a>
+            <a href="#">Über uns</a>
+        </nav>
+        <div class="legal-links">
+            <a href="#">Impressum</a> | <a href="#">AGB</a> | <a href="#">Datenschutz</a>
+        </div>
+    </div>
+</footer>
+</html>

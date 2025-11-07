@@ -1,0 +1,693 @@
+
+@font-face {
+    font-family: 'GT Maru Mega Trial VF';
+    src: url('/fonts/GT Maru Mega Trial VF.ttf') format('truetype-variations');
+    font-weight: 100 900; 
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Zain';
+    src: url('/fonts/Zain.ttf') format('truetype-variations');
+    font-style: normal;
+    font-weight: 100,200,300,400,500,600,700,800,900;
+}
+
+p {
+    font-family: 'Zain', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.3;
+}
+h1 {
+	font-size: 98px;
+	font-family: 'GT Maru Mega Trial VF', serif;
+	margin: 0;
+}
+
+h2 {
+	font-size: 70px;
+	font-family: 'GT Maru Mega Trial VF', serif;
+	margin: 0;
+}
+h3 {
+	font-size: 45px;
+	font-family: 'GT Maru Mega Trial VF', serif;
+	margin: 0;
+    color: #000000;
+}
+
+h4 {
+    font-size: 36px;
+    font-family: 'GT Maru Mega Trial VF', serif;
+    margin: 0;
+    color: #ffffff;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo {
+    font-size: 50px;
+    font-weight: bold;
+	font-family: 'GT Maru Mega Trial VF';	
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 40px;
+	position: sticky;
+	top: 0;
+	background-color: #000000;
+	z-index: 1000;
+}
+.nav-links a {
+	font-family: 'Zain', sans-serif;
+	font-weight: bolder;
+	font-size: 20px;
+	color: #ffffff;
+	text-decoration: none;
+	margin: 0 15px;
+}
+.nav-links {
+	display: flex;
+	justify-content: flex-end;
+	flex: 1;
+}
+.logo a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.cta-button, .details-button {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+	border-radius: 5px;
+    margin-left: 15px;
+}
+
+.cta-button a, .details-button a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+
+.hero-button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cta-button:hover, .hero-button:hover, .details-button:hover .Zutaten-button:hover {
+	box-shadow: 0 0 10px #ffffff;
+	transition: ease-in-out 0.3s;
+	font-weight:bolder;
+}
+.Zutaten-button {
+    border: 2px solid #ffffff;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #ffffff;
+    display: block;
+    width: fit-content; 
+    margin: 20px auto 0; 
+    margin-bottom: 50px;
+}
+
+.hero {
+    position: relative; 
+    align-items: center; 
+    gap: 50px; 
+    padding: 50px 40px; 
+    min-height: 700px; 
+    display: flex;
+}
+
+.image-placeholder1 {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; 
+    overflow: hidden; 
+    flex: none; 
+    margin-right: 0;
+}
+
+.image-placeholder1 img {
+    width: 100%;
+    height: 100%;          
+    object-fit: cover; 
+    display: block;
+    object-position: 50% center; 
+}
+
+.hero-content {
+    position: relative; 
+    z-index: 1; 
+    margin-left: 50%; 
+    flex: 1; 
+    text-align: left;
+}
+
+.hero-content h1, 
+.hero-content p {
+    margin-right: 40px; 
+    color: black;
+}
+
+.why-purrfect {
+    display: flex;
+    align-items: stretch;
+    gap: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 80px;
+}
+
+.image-placeholder {
+    width: 100%;
+    flex: 1; 
+    background-color: transparent; 
+    display: flex;
+    justify-content: center;
+}
+
+.image-placeholder img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain; 
+    object-position: top;
+    top: auto; 
+    left: auto;
+    transform: none;
+    max-width: 100%; 
+    max-height: 100%; 
+    display: block;
+}
+
+.image-placeholder1 {
+    flex: 1; 
+    height: 800px; 
+    background-color: #333; 
+    margin-right: 50px;      
+}
+
+.image-placeholder1 img {
+    width: 100%;
+    height: 100%;          
+    object-fit: cover;     
+    display: block;
+}
+
+.image-placeholder2 {
+    width: 300px;
+    height: 400px;
+    background-color: #333;
+    margin: 10px;
+}
+.why-purrfect .content {
+    flex: 1;
+}
+
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.feature-box {
+    padding: 20px;
+    text-align: center;
+}
+.feature-box p {
+    color: #ffffff; 
+    font-family: 'Zain', sans-serif; 
+    margin-top: 5px; 
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.feature-box p strong {
+    font-size: 20px; 
+    font-weight: bold;
+    color: #ffffff;
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+.details-button {
+    margin-top: 20px;
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0;
+}
+
+.flavors {
+    text-align: center;
+    padding: 20px;
+}
+
+.flavor-intro {
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    margin-bottom: 100px;
+}
+p.flavor-intro {
+    padding: 20px;
+}
+
+.flavor-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 80px;
+}
+
+.card {
+    background-color: #ffffff;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: center;       
+    gap: 8px;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 16px;
+    border-radius: 5px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    flex-grow: 1;
+    object-fit: contain;
+}
+.flavors {
+    padding: 80px 40px;
+    background-color: #1a1a1a; 
+}
+
+.flavor-row {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    gap: 80px;
+    margin-bottom: 80px; 
+    padding: 20px 0;
+}
+
+.flavor-row.reverse {
+    flex-direction: row-reverse; 
+}
+
+.flavor-content {
+    flex: 1; 
+    max-width: 500px;
+    margin-right: 270px;
+}
+.flavor-content-reverse {
+    flex: 1; 
+    max-width: 500px;
+    margin-left: 270px;
+}
+.flavor-title {
+    font-size: 70px;
+    font-family: 'GT Maru Mega Trial VF', serif;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+}
+
+.flavor-content p {
+    font-family: 'Zain', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+.flavor-card-container {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 400px; 
+    position: relative;
+}
+
+.card-flavor {
+    width: 320px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: center;
+    padding: 16px;
+    border-radius: 5px;
+    position: relative; 
+    overflow: visible; 
+}
+
+.card-flavor img {
+    position: absolute;
+    width: 150%;        
+    max-width: none;    
+    height: auto;       
+    object-fit: contain;
+    top: -50px;         
+    left: 50%;
+    transform: translateX(-50%); 
+    z-index: 1;         
+}
+
+.details-button-g {
+    background: transparent;
+    color: #ffffff;
+    padding: 12px 24px;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+    transition: background-color .2s ease, box-shadow .2s ease, color .2s ease;
+}
+
+.details-button-g:hover {
+    background: rgba(255,255,255,0.08);
+    box-shadow: 0 0 8px rgba(255,255,255,0.08);
+}
+
+.bottomImage {
+    width: 100%;
+    height: 600px;
+    margin-top: 20px;
+}
+.bottomImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.form-section {
+    background-color: #1a1a1a; 
+    color: #ffffff; 
+    padding: 80px 40px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto; /* Zentriert den gesamten Abschnitt auf der Seite */
+}
+
+.form-section h1 {
+    /* Style wie "Your Cat is going to LOVE this." */
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.form-section p {
+    /* Style für den Einführungstext */
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Abstand zwischen den vollen Zeilen */
+    text-align: left;
+}
+
+/* --- Label und Input Feld-Styling --- */
+
+.form-group-full,
+.form-group-half {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-family: 'Zain', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #a0a0a0; /* Leichte Graufärbung für Labels */
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+    background-color: #333333; /* Dunkleres Grau für Eingabefelder */
+    color: #ffffff;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Zain', sans-serif;
+    outline: none;
+    transition: box-shadow 0.2s ease;
+}
+
+.contact-form input:focus {
+    box-shadow: 0 0 0 2px #ffffff; /* Leichter weißer Rahmen beim Fokus */
+}
+
+/* --- Split-Felder (Strasse/Nummer, PLZ/Stadt) --- */
+
+.form-group-split {
+    display: flex;
+    gap: 15px;
+}
+
+.form-group-half {
+    flex: 1; /* Stellt sicher, dass beide Hälften gleich breit sind */
+}
+
+/* --- Submit Button Styling --- */
+
+.submit-button {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 30px;
+    font-size: 18px;
+    font-family: Arial, sans-serif; /* Oder eine andere serifenlose Schrift */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #e6e6e6;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+
+/* --- Responsive Anpassung für Mobile --- */
+@media (max-width: 600px) {
+    .form-section {
+        padding: 60px 20px;
+    }
+    
+    .form-section h1 {
+        font-size: 45px; /* Titelgröße auf Mobile reduzieren */
+    }
+
+    /* Auf Mobile die Split-Felder wieder untereinander stapeln */
+    .form-group-split {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+.footer {
+    padding-top: 20px;
+	padding-bottom: 20px;
+    text-align: center;
+    background-color: #000000;
+}
+
+.line {
+    border-top: 1px solid #ffffff;
+    max-width: 100%;
+    margin: 0 auto 50px auto;
+}
+
+.footer-logo {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.address {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #a0a0a0;
+	font-family: 'Zain', sans-serif;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.legal-links {
+    margin-top: 20px;
+    font-size: 15px;
+	font-family: 'Zain', sans-serif;
+}
+
+.legal-links a {
+    color: #a0a0a0;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    
+    .header {
+        padding: 15px 20px;
+        flex-wrap: wrap; 
+    }
+    .image-placeholder1, .image-placeholder2, .image-placeholder3 {
+        display: none;
+    }
+    .hero-content h1, 
+    .hero-content p {
+        color: #ffffff; /* Textfarbe auf weiß ändern */
+        margin-right: 0; /* Alte Ränder entfernen */
+    }
+    .why-purrfect {
+    flex-direction: column; /* Stapelt die Elemente (Bild und Text) untereinander */
+    padding: 20px; /* Reduziere den horizontalen Rand für Mobile */
+    gap: 30px; /* Reduziere den Abstand zwischen den Elementen, falls nötig */
+}
+    /* 2. Button Sichtbarkeit (Wichtig: Nur Mobile-Button anzeigen) */
+    .desktop-only {
+        display: none !important; /* Verstecke den Desktop-Button */
+    }
+    
+    /* 3. Mobile Icon Steuerung */
+    .menu-icon {
+        display: block; /* Zeige den Icon-Container */
+    }
+    
+    /* Icon Farbe und Größe (macht die Icons weiß) */
+    .menu-icon img {
+        filter: invert(100%); 
+        width: 30px; 
+        height: 30px;
+    }
+    
+    /* 4. Navigationsleiste (Mobile Menü-Stil) */
+    .nav-links {
+        display: none; /* Initial versteckt */
+        position: absolute;
+        top: 65px; 
+        left: 0;
+        width: 100%;
+        height: 100vh; 
+        background-color: rgba(0, 0, 0, 0.95);
+        z-index: 999; 
+        flex-direction: column;
+        align-items: center; 
+        justify-content: flex-start; 
+        padding-top: 50px;
+    }
+    .nav-links.visible {
+        display: flex; /* Wird durch JS beim Klick sichtbar */
+    }
+    
+    /* 5. Links und Mobile Button Styling */
+    .nav-links a {
+        font-size: 30px; 
+        margin: 20px 0; 
+    }
+
+    .nav-links .mobile-only { /* Spricht den im <nav> eingebetteten Button an */
+        display: block; 
+        margin-top: 50px; 
+        margin-bottom: 20px;
+        padding: 15px 40px; 
+        font-size: 20px;
+        width: 80%; 
+        max-width: 300px;
+    }
+    
+    /* 6. Hero Sektion mobil anpassen */
+    .hero {
+        flex-direction: column;
+        min-height: auto;
+        padding: 20px;
+    }
+    .hero-content {
+        margin-left: 0;
+        width: 100%;
+        text-align: center; 
+    }
+
+
+    /* 2. Icon-Menü verstecken */
+    .close-icon {
+        display: none; 
+    }
+}
+/* --- ENDE MOBILE STYLES --- */
+
+
+/* --- DESKTOP STYLES: min-width 769px --- */
+@media (min-width: 769px) { 
+    
+    /* 1. Button Sichtbarkeit (Wichtig: Nur Desktop-Button anzeigen) */
+    .mobile-only {
+        display: none !important; /* Verstecke den Mobile-Button */
+    }
+    .desktop-only {
+        display: block; /* Zeige den Desktop-Button */
+    }
+
+    /* 2. Icon-Menü verstecken */
+    .menu-icon, .close-icon, .burger-icon {
+        display: none !important; 
+    }
+    
+    /* 3. Navigationsstil auf Desktop-Standard zurücksetzen */
+    .nav-links {
+        display: flex;
+        position: static; 
+        height: auto;
+        background-color: transparent;
+    }
+}
+/* --- ENDE DESKTOP STYLES --- */
