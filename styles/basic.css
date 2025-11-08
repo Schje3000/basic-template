@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'GT Maru Mega Trial VF';
     /* KORREKTUR: Gehe einen Ordner nach oben (..) und dann in den Ordner fonts */
@@ -20,20 +19,20 @@ p {
     line-height: 1.3;
 }
 h1 {
-	font-size: 98px;
-	font-family: 'GT Maru Mega Trial VF', serif;
-	margin: 0;
+    font-size: 98px;
+    font-family: 'GT Maru Mega Trial VF', serif;
+    margin: 0;
 }
 
 h2 {
-	font-size: 70px;
-	font-family: 'GT Maru Mega Trial VF', serif;
-	margin: 0;
+    font-size: 70px;
+    font-family: 'GT Maru Mega Trial VF', serif;
+    margin: 0;
 }
 h3 {
-	font-size: 45px;
-	font-family: 'GT Maru Mega Trial VF', serif;
-	margin: 0;
+    font-size: 45px;
+    font-family: 'GT Maru Mega Trial VF', serif;
+    margin: 0;
     color: #000000;
 }
 
@@ -60,35 +59,37 @@ body {
 .logo {
     font-size: 50px;
     font-weight: bold;
-	font-family: 'GT Maru Mega Trial VF';	
+    font-family: 'GT Maru Mega Trial VF';   
 }
 .header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 20px 40px;
-	position: sticky;
-	top: 0;
-	background-color: #000000;
-	z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    background-color: #000000;
+    z-index: 1000;
 }
 .nav-links a {
-	font-family: 'Zain', sans-serif;
-	font-weight: bolder;
-	font-size: 20px;
-	color: #ffffff;
-	text-decoration: none;
-	margin: 0 15px;
+    font-family: 'Zain', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
 }
 .nav-links {
-	display: flex;
-	justify-content: flex-end;
-	flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
 }
 .logo a {
     color: #ffffff;
     text-decoration: none;
 }
+
+/* Button Styles (Jetzt direkt auf das <a>-Tag angewendet) */
 .cta-button, .details-button {
     background-color: #ffffff;
     color: #000000;
@@ -96,15 +97,11 @@ body {
     padding: 10px 20px;
     cursor: pointer;
     font-weight: bold;
-	border-radius: 5px;
+    border-radius: 5px;
     margin-left: 15px;
+    display: inline-block; /* WICHTIG: Macht den Link wie einen Block-Button */
+    text-align: center;    /* WICHTIG: Zentriert den Text */
 }
-
-.cta-button a, .details-button a {
-        text-decoration: none;
-        color: inherit;
-    }
-
 
 .hero-button {
     background-color: #000000;
@@ -114,27 +111,21 @@ body {
     cursor: pointer;
     font-weight: bold;
     border-radius: 5px;
-}
-.cta-button a, 
-.hero-button a, 
-.details-button a,
-.details-button-g a, /* Füge den neuen Button hinzu! */
-.Zutaten-button a {
-    display: block;    /* Macht den Link zu einem Block */
-    width: 100%;       /* Füllt die Breite des Buttons */
-    height: 100%;      /* Füllt die Höhe des Buttons */
-    padding: inherit;  /* Übernimmt das Padding vom Button (optional) */
+    display: inline-block; /* WICHTIG */
+    text-align: center;    /* WICHTIG */
 }
 
+/* Allgemeine Link-Regel, die jetzt ohne Button-Umschluss funktioniert */
 a {
     text-decoration: none;
     color: inherit; 
 }
 
-.cta-button:hover, .details-button:hover .Zutaten-button:hover {
-	box-shadow: 0 0 5px #ffffff;
-	transition: ease-in-out 0.3s;
-	font-weight:bolder;
+/* Korrigierter und bereinigter Hover-Block */
+.cta-button:hover, .details-button:hover, .Zutaten-button:hover {
+    box-shadow: 0 0 5px #ffffff;
+    transition: ease-in-out 0.3s;
+    font-weight:bolder;
     background-color: #e6e6e6;
 }
 .hero-button:hover, .Zutaten-button:hover {
@@ -142,6 +133,7 @@ a {
     transition: ease-in-out 0.3s;
     font-weight: bolder;
 }
+
 .Zutaten-button {
     border: 2px solid #ffffff;
     padding: 15px 30px;
@@ -150,10 +142,11 @@ a {
     border-radius: 5px;
     background-color: transparent;
     color: #ffffff;
-    display: block;
+    display: block; /* Kann Block sein, da er zentriert wird */
     width: fit-content; 
     margin: 20px auto 0; 
     margin-bottom: 50px;
+    text-align: center; /* WICHTIG */
 }
 
 .hero {
@@ -437,10 +430,12 @@ p.flavor-intro {
     padding: 12px 24px;
     font-weight: 700;
     border-radius: 5px;
-    cursor: pointer;
+    /* cursor: pointer; */ /* Kann bei a-Tags weggelassen werden */
     border: 2px solid #ffffff;
     box-sizing: border-box;
     transition: background-color .2s ease, box-shadow .2s ease, color .2s ease;
+    display: inline-block; /* WICHTIG */
+    text-align: center;    /* WICHTIG */
 }
 
 .bottomImage {
@@ -544,6 +539,8 @@ p.flavor-intro {
     font-size: 18px;
     font-family: Arial, sans-serif; /* Oder eine andere serifenlose Schrift */
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block; /* WICHTIG */
+    text-align: center;    /* WICHTIG */
 }
 
 .submit-button:hover {
@@ -571,7 +568,7 @@ p.flavor-intro {
 
 .footer {
     padding-top: 20px;
-	padding-bottom: 20px;
+    padding-bottom: 20px;
     text-align: center;
     background-color: #000000;
 }
@@ -591,7 +588,7 @@ p.flavor-intro {
     font-size: 15px;
     margin-bottom: 20px;
     color: #a0a0a0;
-	font-family: 'Zain', sans-serif;
+    font-family: 'Zain', sans-serif;
 }
 
 .footer-links a {
@@ -605,7 +602,7 @@ p.flavor-intro {
 .legal-links {
     margin-top: 20px;
     font-size: 15px;
-	font-family: 'Zain', sans-serif;
+    font-family: 'Zain', sans-serif;
 }
 
 .legal-links a {

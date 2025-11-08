@@ -10,68 +10,63 @@
     <title>Purrfect Bites</title>
     <link rel="stylesheet" href="styles/basic.css">
 </head>
-<header class="header">
-        <div class="logo"><a href="https://schje3000.github.io/purrfect-bites/index.html">Purrfect Bites</a></div>
-        <nav class="nav-links">
-            <a href="https://schje3000.github.io/purrfect-bites/Vorteile.html">Vorteile </a>
-            <a href="https://schje3000.github.io/purrfect-bites/Geschmackssorten.html">Geschmackssorten</a>
-
-            <button class="cta-button mobile-only"><a href="https://schje3000.github.io/purrfect-bites/JetztProbieren.html">Jetzt probieren</a></button>
-            
-        </nav>
-
-        <button class="cta-button desktop-only"><a href="https://schje3000.github.io/purrfect-bites/JetztProbieren.html">Jetzt probieren</a></button>
-
-        <div class="menu-icon">
-            <div class="burger-icon" onClick="showMenu()"> 
-                <img src="images/burger-menu.svg">
-            </div>
-            <div class="close-icon" onClick="hideMenu()">
-                <img src="images/close-menu.svg">
-            </div>
-        </div>
-</header>
-<section class="form-section">
-    <h1>Purrfect!</h1>
-    <p>Vielen Dank! <br> Unsere Mitarbeiter werden sich sofort um deine Bestellung kümmern - nachdem sie ihren Nap in der Sonne beendet haben.</p>
-
-</section>
-    <script type="text/javascript">
-    const nav = document.querySelector('nav');
-    const burgerIcon = document.querySelector('.burger-icon');
-    const closeIcon = document.querySelector('.close-icon');
-
-    const showMenu = () => {
-        // Navigationsmenü anzeigen (CSS: .nav-links.visible -> display: flex)
-        nav.classList.add('visible');
-        
-        // Burger-Icon verstecken (CSS: .burger-icon -> display: none)
-        burgerIcon.style.display = 'none'; 
-        
-        // Close-Icon anzeigen (CSS: .close-icon -> display: block)
-        closeIcon.style.display = 'block';
-    };
-    
-    const hideMenu = () => {
-        // Navigationsmenü verstecken
-        nav.classList.remove('visible');
-        
-        // Burger-Icon anzeigen
-        burgerIcon.style.display = 'block';
-        
-        // Close-Icon verstecken
-        closeIcon.style.display = 'none';
-    };
-</script>
 <body>
 
+<header class="header">
+    <div class="logo"><a href="https://schje3000.github.io/purrfect-bites/index.html">Purrfect Bites</a></div>
+    <nav class="nav-links">
+        <a href="https://schje3000.github.io/purrfect-bites/Vorteile.html">Vorteile </a>
+        <a href="https://schje3000.github.io/purrfect-bites/Geschmackssorten.html">Geschmackssorten</a>
 
-    <footer class="footer">
-    
+        <a class="cta-button mobile-only" href="https://schje3000.github.io/purrfect-bites/JetztProbieren.html">Jetzt probieren</a>
+    </nav>
+
+    <a class="cta-button desktop-only" href="https://schje3000.github.io/purrfect-bites/JetztProbieren.html">Jetzt probieren</a>
+
+    <div class="menu-icon">
+        <div class="burger-icon" onClick="showMenu()"> 
+            <img src="images/burger-menu.svg">
+        </div>
+        <div class="close-icon" onClick="hideMenu()">
+            <img src="images/close-menu.svg">
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="form-section">
+        <h1>Purrfect!</h1>
+        <p>Vielen Dank! <br> Unsere Mitarbeiter werden sich sofort um deine Bestellung kümmern - nachdem sie ihren Nap in der Sonne beendet haben.</p>
+        <a class="details-button" href="https://schje3000.github.io/purrfect-bites/index.html">Weiter Entdecken</a>
+    </section>
+</main>
+
+
+<script type="text/javascript">
+const nav = document.querySelector('nav');
+const burgerIcon = document.querySelector('.burger-icon');
+const closeIcon = document.querySelector('.close-icon');
+
+const showMenu = () => {
+    nav.classList.add('visible');
+    burgerIcon.style.display = 'none'; 
+    closeIcon.style.display = 'block';
+};
+
+const hideMenu = () => {
+    nav.classList.remove('visible');
+    burgerIcon.style.display = 'block';
+    closeIcon.style.display = 'none';
+};
+</script>
+
+
+<footer class="footer">
+
     <div class="bottomImage">
         <img src="images/Catfood_bottom.jpg" alt="Catfood_bottom">
     </div>
-    
+
     <div class="footer-content">
         <p class="address">Purrfect Bites AG | Konsumstrasse 9 | 3007 Bern</p>
         <nav class="footer-links">
@@ -84,4 +79,6 @@
         </div>
     </div>
 </footer>
+
+</body>
 </html>

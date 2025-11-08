@@ -20,11 +20,11 @@
             <a href="https://schje3000.github.io/purrfect-bites/Vorteile.html">Vorteile </a>
             <a href="https://schje3000.github.io/purrfect-bites/Geschmackssorten.html">Geschmackssorten</a>
 
-            <button class="cta-button mobile-only"><a href="https://schje3000.github.io/purrfect-bites/JetztProbieren.html">Jetzt probieren</a></button>
+            <a class="cta-button mobile-only" href="https://schje3000.github.io/purrfect-bites/JetztProbieren.html">Jetzt probieren</a>
 
         </nav>
 
-        <button class="cta-button desktop-only"><a href="https://schje3000.github.io/purrfect-bites/JetztProbieren.html">Jetzt probieren</a></button>
+        <a class="cta-button desktop-only" href="https://schje3000.github.io/purrfect-bites/JetztProbieren.html">Jetzt probieren</a>
 
         <div class="menu-icon">
             <div class="burger-icon" onClick="showMenu()">
@@ -35,15 +35,17 @@
             </div>
         </div>
     </header>
+    
     <main>
-        <section class="hero" style="display: flex; align-items: center;">
+        <section class="hero">
             <div class="image-placeholder1"><img src="images/VorteileHeader.jpg" alt=""></div>
-            <div class="hero-content" style="text-align: left;">
-                <h1 style="text-align: left;">Why Your Cat will Love Purrfect Bites</h1>
-                <p style="text-align: left;">Mehr als nur Futter, wir haben Purrfect Bites kreiert, um Ihre Katze gesund
+            <div class="hero-content">
+                <h1>Why Your Cat will Love Purrfect Bites</h1>
+                <p>Mehr als nur Futter, wir haben Purrfect Bites kreiert, um Ihre Katze gesund
                     und glücklich zu halten sowie immer für einen Snack bereit sind. Entdecken Sie alle Vorteile, die
                     unsere Purrfect Bites zur ersten Wahl für wahre Katzenliebhaber machen:</p>
-                <button class="hero-button">Spoil Your Cat Now</button>
+                
+                <a class="hero-button" href="https://schje3000.github.io/purrfect-bites/JetztProbieren.html">Spoil Your Cat Now</a>
             </div>
         </section>
 
@@ -82,63 +84,54 @@
                         </p>
                     </div>
                     <div class="feature-box"><img src="images/lucide/Vector.svg" alt="Sustainability">
-                        <strong>
-                            <p>Sustainably sourced ingredients
-                        </strong>
-                        Nachhaltig hergestellt mit verantwortungsvoll beschafften Zutaten – weil gute Ernährung auch
-                        Verantwortung bedeutet. So tust du nicht nur deiner Katze etwas Gutes, sondern auch unserer
-                        Umwelt.
+                        <p>
+                            <strong>Sustainably sourced ingredients</strong>
+                            Nachhaltig hergestellt mit verantwortungsvoll beschafften Zutaten – weil gute Ernährung auch
+                            Verantwortung bedeutet. So tust du nicht nur deiner Katze etwas Gutes, sondern auch unserer
+                            Umwelt.
                         </p>
                     </div>
                 </div>
-                <button class="Zutaten-button"><a href="https://www.blv.admin.ch/blv/de/home/lebensmittel-und-ernaehrung/lebensmittelsicherheit/naehrwertinformationen-und-kennzeichnung/lebensmitteletikette.html"></a>Zutatenliste entdecken</button>
+                <a class="Zutaten-button" href="https://www.blv.admin.ch/blv/de/home/lebensmittel-und-ernaehrung/lebensmittelsicherheit/naehrwertinformationen-und-kennzeichnung/lebensmitteletikette.html">Zutatenliste entdecken</a>
             </div>
-                <script type="text/javascript">
-    const nav = document.querySelector('nav');
-    const burgerIcon = document.querySelector('.burger-icon');
-    const closeIcon = document.querySelector('.close-icon');
-
-    const showMenu = () => {
-        // Navigationsmenü anzeigen (CSS: .nav-links.visible -> display: flex)
-        nav.classList.add('visible');
-        
-        // Burger-Icon verstecken (CSS: .burger-icon -> display: none)
-        burgerIcon.style.display = 'none'; 
-        
-        // Close-Icon anzeigen (CSS: .close-icon -> display: block)
-        closeIcon.style.display = 'block';
-    };
-    
-    const hideMenu = () => {
-        // Navigationsmenü verstecken
-        nav.classList.remove('visible');
-        
-        // Burger-Icon anzeigen
-        burgerIcon.style.display = 'block';
-        
-        // Close-Icon verstecken
-        closeIcon.style.display = 'none';
-    };
-</script>
         </section>
 
-        <footer class="footer">
+        <script type="text/javascript">
+            const nav = document.querySelector('nav');
+            const burgerIcon = document.querySelector('.burger-icon');
+            const closeIcon = document.querySelector('.close-icon');
 
-            <div class="bottomImage">
-                <img src="images/Catfood_bottom.jpg" alt="Catfood_bottom">
+            const showMenu = () => {
+                nav.classList.add('visible');
+                burgerIcon.style.display = 'none';
+                closeIcon.style.display = 'block';
+            };
+
+            const hideMenu = () => {
+                nav.classList.remove('visible');
+                burgerIcon.style.display = 'block';
+                closeIcon.style.display = 'none';
+            };
+        </script>
+    </main>
+
+    <footer class="footer">
+
+        <div class="bottomImage">
+            <img src="images/Catfood_bottom.jpg" alt="Catfood_bottom">
+        </div>
+
+        <div class="footer-content">
+            <p class="address">Purrfect Bites AG | Konsumstrasse 9 | 3007 Bern</p>
+            <nav class="footer-links">
+                <a href="https://schje3000.github.io/purrfect-bites/Vorteile.html">Vorteile</a>
+                <a href="https://schje3000.github.io/purrfect-bites/Geschmackssorten.html">Geschmackssorten</a>
+                <a href="https://schje3000.github.io/purrfect-bites/ÜberUns.html">Über uns</a>
+            </nav>
+            <div class="legal-links">
+                <a href="#">Impressum</a> | <a href="#">AGB</a> | <a href="#">Datenschutz</a>
             </div>
-
-            <div class="footer-content">
-                <p class="address">Purrfect Bites AG | Konsumstrasse 9 | 3007 Bern</p>
-                <nav class="footer-links">
-                    <a href="https://schje3000.github.io/purrfect-bites/Vorteile.html">Vorteile</a>
-                    <a href="https://schje3000.github.io/purrfect-bites/Geschmackssorten.html">Geschmackssorten</a>
-                    <a href="https://schje3000.github.io/purrfect-bites/ÜberUns.html">Über uns</a>
-                </nav>
-                <div class="legal-links">
-                    <a href="#">Impressum</a> | <a href="#">AGB</a> | <a href="#">Datenschutz</a>
-                </div>
-            </div>
-        </footer>
-
+        </div>
+    </footer>
+</body>
 </html>
