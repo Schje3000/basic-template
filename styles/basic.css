@@ -710,7 +710,9 @@ p.flavor-intro {
     .nav-links.visible {
         display: flex; /* Wird durch JS beim Klick sichtbar */
     }
-    
+    .hero-button { 
+        color: #000000; background-color: ffffff; }
+
     /* 5. Links und Mobile Button Styling */
     .nav-links a {
         font-size: 30px; 
