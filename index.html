@@ -21,9 +21,9 @@
             <button class="cta-button mobile-only"><a href="https://schje3000.github.io/purrfect-bites/JetztProbieren.html">Jetzt probieren</a></button>
             
         </nav>
-
-        <a href="https://schje3000.github.io/purrfect-bites/JetztProbieren.html"><button class="cta-button desktop-only">Jetzt probieren</button></a>
-
+        
+        <button class="cta-button desktop-only"><a href="https://schje3000.github.io/purrfect-bites/JetztProbieren.html">Jetzt probieren</a></button>
+        
         <div class="menu-icon">
             <div class="burger-icon" onClick="showMenu()"> 
                 <img src="images/burger-menu.svg">
@@ -40,7 +40,7 @@
             <div class="hero-content" style="text-align: left;">
                 <h1 style="text-align: left;">Tasty Bites for <br>Picky Paws</h1>
                 <p style="text-align: left;">Voller natürlicher Inhaltsstoffe und für alle wählerischen Fellnasen der klare Favorit – Purrfect Bites macht jede Mahlzeit zu einem unvergesslichen Festmahl. Gut essbar, nahrhaft und einfach unwiderstehlich.</p>
-                <a href="https://schje3000.github.io/purrfect-bites/JetztProbieren.html"></a><button class="hero-button">Spoil Your Cat Now</button></a>
+                <button class="hero-button"><a href="https://schje3000.github.io/purrfect-bites/JetztProbieren.html">Spoil Your Cat Now</a></button>
             </div>
         </section>
 
@@ -55,7 +55,9 @@
                     <div class="feature-box"><img src="images/lucide/Vector-3.svg" alt="Picky Cat"><p><strong>Loved by the pickiest cats</strong></p></div>
                     <div class="feature-box"><img src="images/lucide/Vector.svg" alt="Sustainability"><p><strong>Sustainably sourced ingredients</strong></p></div>
                 </div>
-                <a href="https://schje3000.github.io/purrfect-bites/Vorteile.html"><button class="details-button">Entdecke alle Vorteile</button></a>
+                <button class="details-button">
+                    <a href="https://schje3000.github.io/purrfect-bites/Vorteile.html">Entdecke alle Vorteile</a>
+                </button>
             </div>
         </section>
 
@@ -83,7 +85,9 @@
         </a>
     </div>
 </div>
-<button class="details-button"><a href="https://schje3000.github.io/purrfect-bites/Geschmackssorten.html"></a>Entdecke alle Geschmäcker</button>
+<button class="details-button">
+    <a href="https://schje3000.github.io/purrfect-bites/Geschmackssorten.html">Entdecke alle Geschmäcker</a>
+</button>
 
     <script type="text/javascript">
     const nav = document.querySelector('nav');
@@ -91,27 +95,17 @@
     const closeIcon = document.querySelector('.close-icon');
 
     const showMenu = () => {
-        // Navigationsmenü anzeigen (CSS: .nav-links.visible -> display: flex)
         nav.classList.add('visible');
-        
-        // Burger-Icon verstecken (CSS: .burger-icon -> display: none)
         burgerIcon.style.display = 'none'; 
-        
-        // Close-Icon anzeigen (CSS: .close-icon -> display: block)
         closeIcon.style.display = 'block';
     };
     
     const hideMenu = () => {
-        // Navigationsmenü verstecken
         nav.classList.remove('visible');
-        
-        // Burger-Icon anzeigen
         burgerIcon.style.display = 'block';
-        
-        // Close-Icon verstecken
         closeIcon.style.display = 'none';
     };
-</script>
+    </script>
     </section>
 </main>
 </body>
