@@ -126,6 +126,10 @@ body {
     padding: inherit;  /* Übernimmt das Padding vom Button (optional) */
 }
 
+a {
+    text-decoration: none;
+    color: inherit; 
+}
 
 .cta-button:hover, .details-button:hover .Zutaten-button:hover {
 	box-shadow: 0 0 5px #ffffff;
