@@ -98,6 +98,13 @@ body {
     text-decoration: none;
     margin: 0 15px;
 }
+.nav-links a:hover {
+    text-decoration: underline; 
+    text-decoration-thickness: 2px;
+    text-decoration-style: solid;
+    text-underline-offset: 5px; 
+    color: #f0aa65;
+}
 .nav-links {
     display: flex;
     justify-content: flex-end;
@@ -229,11 +236,12 @@ a {
 
 .why-purrfect {
     display: flex;
-    align-items: stretch;
+    flex-direction: row;       /* ensure horizontal layout */
+    align-items: center;       /* vertical alignment of children */
+    justify-content: space-between; /* spread items horizontally */
     gap: 50px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 80px;
+    padding: 80px 40px;        /* combines top/bottom and left/right */
+    flex-wrap: nowrap;         /* prevent wrapping so children stay on one line */
 }
 
 .image-placeholder {
